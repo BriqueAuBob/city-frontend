@@ -33,13 +33,13 @@ const auth = useAuthStore();
     </ul>
     <div class="flex gap-2">
       <FeaturesLocaleSelector />
-      <template v-if="auth.isAuthenticated && route.path !== '/'">
+      <template v-if="auth.isAuthenticated && !route.name.startsWith('index')">
         <UIButton @click="auth.logout" color="red">{{
           $t("auth.logout")
         }}</UIButton>
       </template>
       <NuxtLinkLocale
-        v-else-if="route.path === '/'"
+        v-else-if="route.name.startsWith('index')"
         :to="{ name: 'app.index' }"
       >
         <UIButton color="primary">
