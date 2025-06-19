@@ -4,8 +4,12 @@ definePageMeta({
   middleware: ["auth"],
 });
 
+const {
+  public: { app_name },
+} = useRuntimeConfig();
+
 useSeoMeta({
-  titleTemplate: "%s - CityApp",
+  titleTemplate: "%s - " + app_name,
 });
 </script>
 
