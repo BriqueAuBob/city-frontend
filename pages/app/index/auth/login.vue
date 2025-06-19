@@ -5,6 +5,7 @@ const localeRoute = useLocaleRoute();
 
 definePageMeta({
   name: "app.auth.login",
+  layout: "auth",
 });
 
 const form = reactive({
@@ -19,7 +20,7 @@ const onLoginButtonPressed = async () => {
 </script>
 
 <template>
-  <form class="container">
+  <form class="container py-24">
     <UIInput
       id="email"
       type="text"
@@ -36,6 +37,15 @@ const onLoginButtonPressed = async () => {
       v-model="form.password"
       required
     />
+    <div class="py-2">
+      {{ $t("auth.no_account") }}
+      <NuxtLinkLocale
+        :to="{ name: 'app.auth.register' }"
+        class="text-secondary-500"
+      >
+        {{ $t("auth.register") }}
+      </NuxtLinkLocale>
+    </div>
     <UIButton class="w-full mt-4" @click.prevent="onLoginButtonPressed">
       Login
     </UIButton>

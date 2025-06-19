@@ -81,7 +81,9 @@
   "auth": {
     "register": "S'inscrire",
     "login": "Se connecter",
-    "logout": "Se déconnecter"
+    "logout": "Se déconnecter",
+    "no_account": "Pas encore de compte ?",
+    "already_have_account": "Déjà un compte ?"
   },
 
   "app": {

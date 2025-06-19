@@ -2,7 +2,15 @@
 import { useAuthStore } from "~/stores/auth";
 
 const route = useRoute();
-const links: any[] = [];
+const localePath = useLocalePath();
+
+const links: any[] = [
+  {
+    id: "reports",
+    url: localePath({ name: "app.reports" }),
+    text: "Signalements",
+  },
+];
 
 const {
   public: { app_name },
@@ -26,12 +34,12 @@ const auth = useAuthStore();
         {{ app_name }}
       </h1>
     </NuxtLinkLocale>
-    <ul>
+    <ul v-if="route.name?.startsWith('app') && !route.name.includes('auth')">
       <li v-for="link in links" :key="link.id">
         <NuxtLinkLocale :to="link.url">{{ link.text }}</NuxtLinkLocale>
       </li>
     </ul>
-    <div class="flex gap-2">
+    <div class="flex gap-2 flex-col lg:flex-row">
       <FeaturesLocaleSelector />
       <template v-if="auth.isAuthenticated && !route.name.startsWith('index')">
         <UIButton @click="auth.logout" color="red">{{

@@ -1,5 +1,128 @@
 {
+  "go_to_app": "Go to the app",
+
+  "our_concept": "Our concept",
+  "slogan": "\"A city that listens, a city that reflects you\"",
+  "description": "Crystal Town is a city concept made for a brighter future where trust is built through transparency. A city that shares its data, makes its choices visible, and involves its residents at every stage of the decision-making process.",
+  "eye_projects": {
+    "title": "Have an overview of all the projects underway in your city",
+    "description": "Thanks to our platform, stay connected to your city in real time. Stay informed about all the projects underway, vote on whether or not to implement a project, sign up for co-decision workshops... Become a major player in the city of tomorrow!"
+  },
+
+  "infos": {
+    "title": "Centralize all your city's information",
+    "description": "A platform, transparent communication, co-construction of the city of tomorrow"
+  },
+
+  "how": "How ?",
+  "explain": "A calendar updated in real time to keep you informed of the duration of projects, their nature and their progress.",
+  "image_online": "Images and online report available to you",
+
+  "first-project": {
+    "title": "A first project set up with you.",
+    "description": "Redevelopment of spaces and de-permeabilization of soils",
+    "text": "We believe it's essential to begin with a transformation of the space, involving everyone. The goal is to take back control of your city, collaborate, engage, learn about each other, and transform your city to reflect your image by supporting sustainable causes. Building the city of tomorrow begins with building ecological and social transparency."
+  },
+
+  "features": {
+    "ecology": {
+      "name": "Purify the air",
+      "description": "Improve your daily life with a healthier environment for everyone."
+    },
+    "project": {
+      "name": "Take part in the project",
+      "description": "Register and come build the city of tomorrow alongside professionals."
+    },
+    "progress": {
+      "name": "Follow the progress of the project",
+      "description": "View field reports and documents on our platform."
+    }
+  },
+
+  "report": "Report any problems or incivility you encounter on a daily basis.\nObjective: to improve your daily life, to report problems, so that you can take action accordingly.",
+  "reports_list": "Monitoring of reports and their progress: “In progress”, “Pending”, “Validated”, “Refused”.",
+
+  "suggestions": {
+    "title": "Want to share an idea?",
+    "description": "An idea box available on our platform will allow you to share your ideas. Ideas are then discussed during co-decision workshops. Your idea could become the project of tomorrow in your city.",
+
+    "fake_poll": {
+      "title": "Vote",
+      "description": "Is installing benches in the park a good idea?",
+      "options": {
+        "yes": "I vote for the installation",
+        "no": "I vote against the installation",
+        "maybe": "I need more information"
+      },
+      "submit": "Submitted"
+    },
+
+    "idea_box": {
+      "title": "Idea box",
+      "description": "Submit your ideas to improve our city!",
+      "placeholder": "Enter your idea here",
+      "label": "Idea",
+      "submit": "Submit the idea",
+
+      "fr_title": "Enable everyone to participate in decision-making",
+      "fr_description": "A survey, petition, and vote will be posted online on the platform. Take part in the life of your city and make your voice heard."
+    }
+  },
+
+  "follow_us": "Follow us",
+
+  "invest": {
+    "title": "Want to get involved?",
+    "description": "Register for the co-decision workshops",
+    "next_event": "Register for the next citizen co-decision workshop",
+    "date": "Next workshop: June 25, 2025"
+  },
+
+  "auth": {
+    "register": "Subscribe",
+    "login": "Log In",
+    "logout": "Log out",
+
+    "no_account": "Don't have an account?",
+    "already_have_account": "Already have an account?"
+  },
+
   "app": {
-    "welcome": "Bienvenue sur {appName}"
+    "welcome": "Welcome to {appName}",
+    "description": "Application for reporting incivility and damage",
+
+    "form": {
+      "report_category_id": {
+        "label": "Catégorie",
+        "placeholder": "Select a category"
+      },
+      "report_description": {
+        "label": "Description",
+        "placeholder": "Describe the problem"
+      },
+      "last_name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "first_name": {
+        "label": "First name",
+        "placeholder": "Your first name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Your password"
+      },
+      "confirm_password": {
+        "label": "Confirm password",
+        "placeholder": "Confirm password"
+      },
+      "submit": {
+        "label": "Submit the report"
+      }
+    }
   }
 }

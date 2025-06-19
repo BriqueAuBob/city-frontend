@@ -35,7 +35,7 @@ const cities = [LogoNantes, LogoRennes, LogoParis, LogoTroyes];
     <div class="container lg:grid grid-cols-5 gap-8 items-center">
       <img
         src="~/assets/images/city_picture.png"
-        class="rounded-xl col-span-2 w-full mb-4 lg:mb-0"
+        class="rounded-xl col-span-2 w-full mb-4 lg:mb-0 shadow-xl shadow-pink-500/20 border border-white"
       />
       <div class="col-span-3 flex flex-col">
         <h2 class="text-xl font-bold mb-4">
@@ -197,6 +197,7 @@ const cities = [LogoNantes, LogoRennes, LogoParis, LogoTroyes];
         {{ $t("suggestions.idea_box.description") }}
       </p>
       <UIInput
+        id="suggestion"
         class="mb-4 text-black"
         :placeholder="$t('suggestions.idea_box.placeholder')"
         :label="$t('suggestions.idea_box.label')"
