@@ -132,13 +132,13 @@ const cities = [LogoNantes, LogoRennes, LogoParis, LogoTroyes];
     <img src="~/assets/images/mockup.png" class="w-full" />
     <div class="flex flex-col gap-4 col-span-2">
       <div class="flex gap-2">
-        <UIBlurGradientIcon name="lucide:eye" />
+        <UIBlurGradientIcon icon="lucide:eye" />
         <p>
           {{ $t("report") }}
         </p>
       </div>
       <div class="flex gap-2">
-        <UIBlurGradientIcon name="lucide:eye" />
+        <UIBlurGradientIcon icon="lucide:eye" />
         <p>
           {{ $t("reports_list") }}
         </p>
