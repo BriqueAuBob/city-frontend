@@ -1,6 +1,47 @@
 {
   "go_to_app": "Aller à l'application",
 
+  "our_concept": "Notre concept",
+  "slogan": "\"Une ville à l'écoute, une ville à votre image\"",
+  "description": "Crystal Town est une ville de demain où la confiance passe par la transparence. Une ville qui partage ses données, rend visibles ses choix, et associe ses habitants à chaque étape de la décision.",
+  "eye_projects": {
+    "title": "Avoir une vision de tous les projets en cours dans votre ville",
+    "description": "Grâce à notre plateforme rester connecté en temps réel à votre ville. Rester informé de tous les projets en cours, votez pour la mise en place ou non de projet, inscrivez-vous à des ateliers de co-décision... Devenez un acteur majeur de la ville de demain !"
+  },
+
+  "infos": {
+    "title": "Centraliser toutes les informations de votre ville",
+    "description": "Une plateforme, une communication transparente, une co-construction de la ville de demain"
+  },
+
+  "how": "Comment ?",
+  "explain": "Un agenda mis à jour en temps réel pour vous tenir informé de la durer des projets, leur nature et leur avancée.",
+  "image_online": "Des images et rapport en ligne mis à votre disposition",
+
+  "first-project": {
+    "title": "Un premier projet mis en place avec vous.",
+    "description": "Réaménagement des espaces vers et déperméabilisation des sols",
+    "text": "Nous pensons qu’il est essentiel de commencer par une transformation de l’espace avec la participation de tous. Objectif reprendre sa ville en main, collaborer, s’engager, apprendre à se connaître et transformer votre ville à votre image en soutenant des causes durables. Construire la ville de demain commence en construisant une transparence écologique et sociale."
+  },
+
+  "features": {
+    "ecology": {
+      "name": "Purifier l'air",
+      "description": "Améliorer votre quotidien avec un environnement plus sein pour tous."
+    },
+    "project": {
+      "name": "Prendre part au projet",
+      "description": "Inscrivez-vous et venez construire aux côtés de professionnels la ville de demain."
+    },
+    "progress": {
+      "name": "Suivez l'avancée du projet",
+      "description": "Visualisez les rapports de terrains et document sur notre plateforme."
+    }
+  },
+
+  "report": "Signalez les problèmes ou incivilités que vous rencontrés au quotidien.\nObjectif : améliorer votre quotidien, faire remonter les problèmes, pour pouvoir agir en conséquence",
+  "reports_list": "Suivi de ses signalements et de leurs avancées : “En cours de traitement”, “En attente”, “Validé”, “Refusé”.",
+
   "auth": {
     "logout": "Se déconnecter"
   },

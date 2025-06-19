@@ -26,7 +26,8 @@ const props = defineProps({
 const colorClasses = computed(() => {
   const colors = {
     primary: {
-      primary: "bg-gradient-to-b from-primary-500 to-primary-700 text-white",
+      primary:
+        "bg-gradient-to-r from-purple-500 via-pink-500 to-beige-500 text-white",
       text: "bg-transparent text-primary-600 hover:text-primary-800",
     },
     secondary: {
@@ -57,11 +58,17 @@ const sizeClasses = computed(() => {
 </script>
 
 <template>
-  <button
-    class="shadow-sm hover:-translate-y-1 items-center gap-1 cursor-pointer rounded-lg flex hover:brightness-110 ease-out duration-200 font-semibold justify-center shadow-button disabled:opacity-25 disabled:cursor-not-allowed"
-    :class="[colorClasses, sizeClasses]"
-    :disabled="disabled"
-  >
-    <slot></slot>
-  </button>
+  <div class="relative">
+    <div
+      class="absolute left-0 top-0 bottom-0 right-0 rounded-full blur-lg -z-1"
+      :class="colorClasses"
+    ></div>
+    <button
+      class="shadow-sm hover:-translate-y-1 items-center gap-1 cursor-pointer rounded-full flex hover:brightness-110 ease-out duration-200 font-semibold justify-center shadow-button disabled:opacity-25 disabled:cursor-not-allowed border border-white w-full"
+      :class="[colorClasses, sizeClasses]"
+      :disabled="disabled"
+    >
+      <slot></slot>
+    </button>
+  </div>
 </template>
