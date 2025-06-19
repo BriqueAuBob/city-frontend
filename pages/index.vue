@@ -10,7 +10,7 @@ const {
 
 useSeoMeta({
   title: "Landing Page",
-  titleTemplate: "%s - MyApp",
+  titleTemplate: "%s - " + app_name,
 });
 
 const cities = [LogoNantes, LogoRennes, LogoParis, LogoTroyes];
