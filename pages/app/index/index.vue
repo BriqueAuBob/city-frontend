@@ -43,14 +43,7 @@ const { data } = useAsyncData<Report[]>(() => $fetchApi("/reports"));
     </div>
     <div class="grid grid-cols-2 gap-3 mt-4">
       <template v-for="report in data" :key="report.id">
-        <UICard class="bg-white p-4 rounded shadow">
-          <h2 class="text-lg font-semibold">{{ report.category.name }}</h2>
-          <p class="text-gray-600">{{ report.description }}</p>
-          <p class="text-sm text-gray-500">
-            Signalé le {{ new Date(report.createdAt).toLocaleDateString() }}
-          </p>
-          <FeaturesReportStatus class="mt-2" :report="report" />
-        </UICard>
+        <FeaturesReport :report="report" />
       </template>
     </div>
   </div>

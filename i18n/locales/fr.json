@@ -1,4 +1,6 @@
 {
+  "go_to_app": "Aller à l'application",
+
   "auth": {
     "logout": "Se déconnecter"
   },

@@ -38,6 +38,7 @@ const createReport = async () => {
       :itemKey="(i) => i?.value"
       :itemText="(i) => i?.label"
       :itemValue="(i) => i?.value"
+      required
     />
     <UIInput id="report_description" v-model="form.description" type="text" />
     <UIButton color="primary" class="mt-4" @click="createReport">

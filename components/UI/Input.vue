@@ -33,6 +33,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  required: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const typeComputed = computed(() => {
@@ -58,6 +62,7 @@ const label = computed(() => {
       :class="{ 'sr-only': hiddenLabel }"
     >
       {{ label }}
+      <span v-if="required" class="text-red-500">*</span>
     </label>
     <div class="relative">
       <input

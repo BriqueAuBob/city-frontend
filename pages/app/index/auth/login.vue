@@ -26,6 +26,7 @@ const onLoginButtonPressed = async () => {
       label="Email"
       placeholder="Email"
       v-model="form.email"
+      required
     />
     <UIInput
       id="password"
@@ -33,6 +34,7 @@ const onLoginButtonPressed = async () => {
       label="Password"
       placeholder="Password"
       v-model="form.password"
+      required
     />
     <UIButton class="w-full mt-4" @click.prevent="onLoginButtonPressed">
       Login

@@ -40,6 +40,11 @@ const props = defineProps({
     required: false,
     default: false,
   },
+  required: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
 });
 
 const itemValueFromModel = computed(() => {
@@ -80,6 +85,7 @@ const label = computed(() => {
         v-if="label && !hideLabel"
       >
         {{ label }}
+        <span v-if="required" class="text-red-500">*</span>
       </label>
       <HeadlessListboxButton
         class="relative block border w-full items-center px-4 py-2 rounded-xl disabled:cursor-not-allowed disabled:opacity-50 text-left cursor-pointer"

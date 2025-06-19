@@ -12,6 +12,12 @@
   --color-primary-800: #2c4aa1;
   --color-primary-900: #29407f;
   --color-primary-950: #1d294e;
+
+  --color-secondary-500: #a785f7;
+
+  --color-pink-500: #de43d3;
+
+  --color-beige-500: #fcdbcb;
 }
 
 body {

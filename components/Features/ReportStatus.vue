@@ -15,6 +15,13 @@ const text = {
   REJECTED: "Rejeté",
 };
 
+const icon = {
+  PENDING: "lucide:clock",
+  IN_PROGRESS: "lucide:loader-circle",
+  RESOLVED: "lucide:check",
+  REJECTED: "lucide:x",
+};
+
 defineProps({
   report: {
     type: Object as PropType<Report>,
@@ -25,6 +32,11 @@ defineProps({
 
 <template>
   <UIChip :color="colors[report.status]">
+    <Icon
+      :name="icon[report.status]"
+      class="mr-1"
+      :class="report.status === 'IN_PROGRESS' && 'animate-spin'"
+    />
     {{ text[report.status] }}
   </UIChip>
 </template>
