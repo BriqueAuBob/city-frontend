@@ -42,7 +42,45 @@
   "report": "Signalez les problèmes ou incivilités que vous rencontrés au quotidien.\nObjectif : améliorer votre quotidien, faire remonter les problèmes, pour pouvoir agir en conséquence",
   "reports_list": "Suivi de ses signalements et de leurs avancées : “En cours de traitement”, “En attente”, “Validé”, “Refusé”.",
 
+  "suggestions": {
+    "title": "Envie de transmettre une idée ?",
+    "description": "Une boîte à idée disponible dans notre plateforme vous permettra de la partager. Les idées sont ensuite discutées pendant les ateliers de co-décision. Votre idée deviendra peut-être le projet de demain dans votre ville.",
+
+    "fake_poll": {
+      "title": "Vote",
+      "description": "L’installation de bancs dans le parc est-elle une bonne idée ?",
+      "options": {
+        "yes": "Je suis pour l'installation",
+        "no": "Je suis contre l'installation",
+        "maybe": "Peut-être, j'ai besoin de plus d'informations"
+      },
+      "submit": "Voter"
+    },
+
+    "idea_box": {
+      "title": "Boîte à idées",
+      "description": "Soumettez-nous vos idées pour améliorer notre ville !",
+      "placeholder": "Entrez votre idée ici",
+      "label": "Idée",
+      "submit": "Soumettre l'idée",
+
+      "fr_title": "Permettre à tous de participer à la prise de décision",
+      "fr_description": "Sondage et pétition et vote seront mis en ligne sur la plateforme. prenez part à la vie de votre ville, faîtes entendre votre voix."
+    }
+  },
+
+  "follow_us": "Suivez-nous",
+
+  "invest": {
+    "title": "Envie de s'investir ?",
+    "description": "Inscrivez-vous aux ateliers de co-decisions",
+    "next_event": "S'inscrire au prochain atelier de co-décision citoyenne",
+    "date": "Prochain atelier: 25 juin 2025"
+  },
+
   "auth": {
+    "register": "S'inscrire",
+    "login": "Se connecter",
     "logout": "Se déconnecter"
   },
 

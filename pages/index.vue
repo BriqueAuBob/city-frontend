@@ -128,21 +128,110 @@ const cities = [LogoNantes, LogoRennes, LogoParis, LogoTroyes];
       :description="feature.description"
     />
   </section>
-  <section class="container py-16 grid grid-cols-3 gap-8">
-    <img src="~/assets/images/mockup.png" class="w-full" />
-    <div class="flex flex-col gap-4 col-span-2">
-      <div class="flex gap-2">
-        <UIBlurGradientIcon icon="lucide:eye" />
+  <section class="py-16 grid grid-cols-3 gap-8">
+    <div class="relative">
+      <img
+        src="~/assets/images/circle_gradient.png"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-25"
+      />
+      <img src="~/assets/images/mockup.png" class="w-full" />
+    </div>
+    <div class="container flex flex-col gap-12 col-span-2 justify-center">
+      <div class="flex gap-6 items-center">
+        <UIBlurGradientIcon />
         <p>
           {{ $t("report") }}
         </p>
       </div>
-      <div class="flex gap-2">
-        <UIBlurGradientIcon icon="lucide:eye" />
+      <div class="flex gap-6 items-center">
+        <UIBlurGradientIcon />
         <p>
           {{ $t("reports_list") }}
         </p>
       </div>
+    </div>
+  </section>
+  <section class="container py-8 grid lg:grid-cols-2 gap-4 items-center">
+    <div>
+      <h2 class="font-semibold text-xl">{{ $t("suggestions.title") }}</h2>
+      <h3 class="text-gray-500 text-md mt-2">
+        {{ $t("suggestions.description") }}
+      </h3>
+    </div>
+    <div class="bg-gradient-image rounded-xl p-8 text-white">
+      <h4 class="text-xl font-semibold mb-1">
+        {{ $t("suggestions.fake_poll.title") }}
+      </h4>
+      <p class="text-md text-gray-100 mb-2">
+        {{ $t("suggestions.fake_poll.description") }}
+      </p>
+      <div class="flex gap-2 items-center mb-2">
+        <input type="radio" id="fake_poll" name="fake_poll" />
+        <label for="fake_poll" class="text-sm">
+          {{ $t("suggestions.fake_poll.options.yes") }}
+        </label>
+      </div>
+      <div class="flex gap-2 items-center mb-2">
+        <input type="radio" id="fake_poll_2" name="fake_poll" />
+        <label for="fake_poll_2" class="text-sm">
+          {{ $t("suggestions.fake_poll.options.no") }}
+        </label>
+      </div>
+      <div class="flex gap-2 items-center mb-2">
+        <input type="radio" id="fake_poll_3" name="fake_poll" />
+        <label for="fake_poll_3" class="text-sm">
+          {{ $t("suggestions.fake_poll.options.maybe") }}
+        </label>
+      </div>
+      <UIButton class="w-full mt-6" size="md">
+        {{ $t("suggestions.fake_poll.submit") }}
+      </UIButton>
+    </div>
+  </section>
+  <section class="container py-8 grid lg:grid-cols-2 gap-4 items-center">
+    <div class="bg-gradient-image rounded-xl p-8 text-white">
+      <h4 class="text-xl font-semibold mb-1">
+        {{ $t("suggestions.idea_box.title") }}
+      </h4>
+      <p class="text-md text-gray-100 mb-2">
+        {{ $t("suggestions.idea_box.description") }}
+      </p>
+      <UIInput
+        class="mb-4 text-black"
+        :placeholder="$t('suggestions.idea_box.placeholder')"
+        :label="$t('suggestions.idea_box.label')"
+        type="text"
+      />
+      <UIButton class="w-full mt-6" size="md">
+        {{ $t("suggestions.idea_box.submit") }}
+      </UIButton>
+    </div>
+    <div>
+      <h2 class="font-semibold text-xl">
+        {{ $t("suggestions.idea_box.fr_title") }}
+      </h2>
+      <h3 class="text-gray-500 text-md mt-2">
+        {{ $t("suggestions.idea_box.fr_description") }}
+      </h3>
+    </div>
+  </section>
+  <section class="py-24 bg-gradient-image text-white">
+    <div class="container text-center">
+      <h2 class="text-3xl font-bold mb-4">{{ $t("invest.title") }}</h2>
+      <p class="text-lg mb-8">{{ $t("invest.description") }}</p>
+      <UICard
+        :hover="false"
+        class="text-black p-6 max-w-lg mx-auto text-left flex flex-col gap-2"
+      >
+        <UIInput id="first_name" />
+        <UIInput id="last_name" />
+        <UIInput id="email" />
+        <NuxtLinkLocale :to="{ name: 'app.index' }">
+          <UIButton class="mt-4" size="lg">
+            {{ $t("auth.register") }}
+          </UIButton>
+        </NuxtLinkLocale>
+      </UICard>
     </div>
   </section>
 </template>
